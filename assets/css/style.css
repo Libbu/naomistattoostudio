@@ -42,8 +42,9 @@ header {
 header h1 {
     color: #faebd7;
     display: inline-block;
+    width: 30%;
     margin-bottom: 0px;
-}
+} 
 
 header a {
     text-decoration: none;
@@ -86,27 +87,23 @@ nav {
 
 /*nav toggle*/
 
-#nav-toggle:checked~nav {
-    display: block;
-}
-
-#nav-toggle {
-    display: none;
-}
-
-.nav-toggle-label {
+.navbar-toggler {
     font-size: 2rem;
     color: #faebd7;
-
+    border: none; 
 }
+
 
 
 section {
-    background-color: blueviolet
+    background-color: #252525;
+    height: 200px;
+    margin-top: 96px;
 }
 
 footer {
-    background-color: aquamarine
+    background-color: aquamarine;
+    height: 800px;
 }
 
 
