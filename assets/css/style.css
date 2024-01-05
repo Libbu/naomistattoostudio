@@ -41,12 +41,19 @@ header {
 
 header h1 {
     color: #faebd7;
+    display: inline-block;
+    margin-bottom: 0px;
 }
 
 header a {
     text-decoration: none;
     color: #faebd7;
 }
+
+#logo-image {
+    max-width: 11vw
+}
+
 
 /*styling for nav element*/
 #menu {
