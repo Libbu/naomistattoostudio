@@ -1,5 +1,5 @@
 /*Google fonts import*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Italiana:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&family=Italiana:wght@200;300;400;500;600;700&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser*/
 * {
@@ -29,7 +29,7 @@ h3 {
 /*Header*/
 header {
     width: 100%;
-    background-color: #4e0a39;
+    background-color: #ffffff;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -40,57 +40,59 @@ header {
 }
 
 header h1 {
-    color: #faebd7;
+    color: #4e0a39;
     display: inline-block;
     width: 30%;
     margin-bottom: 0px;
-} 
+    font-weight:600;
+}
 
 header a {
     text-decoration: none;
-    color: #faebd7;
+    color: #4e0a39;
 }
 
 #logo-image {
-    max-width: 11vw
+    max-width: 11vw;
+    block-size: auto;
+    padding: 16px 16px 16px 0px;
 }
+ 
 
 
 /*styling for nav element*/
-#menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-    list-style-type: none;
-}
-
-#menu>li {
-    margin-bottom: 1em;
-}
 
 .active {
-    border-bottom: 1px solid #faebd7;
+    border-bottom: 1px solid #4e0a39;
 }
 
 /* navbar styles with dropdown toggle*/
 
 nav {
-    position: absolute;
-    background-color: #4e0a39;
-    width: 100%;
-    padding: 0 1rem;
     z-index: 99;
-    box-shadow: 0 2px 2px #500238;
-    left: 0;
-    display: none;
-    top: 100%;
 }
 
 /*nav toggle*/
 
 .navbar-toggler {
     font-size: 2rem;
-    color: #faebd7;
-    border: none; 
+    color: #4e0a39;
+    border: none;
+}
+
+.navbar {
+    justify-content: right;
+    max-width: 30%;
+}
+
+.nav-link  {
+    color:#4e0a39;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link.active {
+    color: #4e0a39;
+    font-weight: 500;
 }
 
 
@@ -135,6 +137,16 @@ footer {
         font-size: 280%;
         line-height: 75px;
         margin: 0 0 0.5rem;
+        font-weight:600;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    #logo-image {
+
+        padding: 0px 16px 16px 0px;
     }
 
 }
